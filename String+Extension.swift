@@ -5,7 +5,7 @@
 //  Created by Hieu Lam on 10/26/18.
 //
 
-extension String {
+public extension String {
     func fromBase64() -> String? {
         guard let data = Data(base64Encoded: self) else {
             return nil
