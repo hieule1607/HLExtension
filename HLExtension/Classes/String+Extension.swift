@@ -6,7 +6,7 @@
 //
 
 public extension String {
-    public func fromBase64() -> String? {
+    func fromBase64() -> String? {
         guard let data = Data(base64Encoded: self) else {
             return nil
         }
