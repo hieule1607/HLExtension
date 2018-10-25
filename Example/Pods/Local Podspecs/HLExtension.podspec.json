@@ -1,0 +1,22 @@
+{
+  "name": "HLExtension",
+  "version": "0.1.0",
+  "summary": "A short description of HLExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hieule1607/HLExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hieule1607": "hieule1607@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/hieule1607/HLExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HLExtension/Classes/**/*"
+}

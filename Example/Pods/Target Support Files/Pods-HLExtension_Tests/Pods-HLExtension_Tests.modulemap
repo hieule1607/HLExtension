@@ -1,0 +1,6 @@
+framework module Pods_HLExtension_Tests {
+  umbrella header "Pods-HLExtension_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

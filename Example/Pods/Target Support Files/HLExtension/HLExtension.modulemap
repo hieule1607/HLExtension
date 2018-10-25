@@ -1,0 +1,6 @@
+framework module HLExtension {
+  umbrella header "HLExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
