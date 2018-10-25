@@ -14,7 +14,7 @@
 		74925ACC52BDD0F33251318DE3829670 /* Pods-HLExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8331F96493A96DA3D82236D0847ADFC8 /* Pods-HLExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F393CA694F2520D814AEB727AFEAE22 /* Pods-HLExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 189438D96343FD02B89D77F5BF562D38 /* Pods-HLExtension_Example-dummy.m */; };
 		AC5045F9D0FDA785685029DC3A56700B /* HLExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3B5837DCB8D6DE6865E99BFDA47C /* HLExtension-dummy.m */; };
-		B6B94FB2E82E53D489DB54B861E0EA01 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1710C39E9867E7610FE2EBC68B7828FC /* ReplaceMe.swift */; };
+		AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75DC5221822D9F00D99C77 /* Color+Extension.swift */; };
 		CD060AA36F43CF14F9EEEA83F3FA5DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		EC64ED81D0FE0F35EA5F82DDB5E7DCB3 /* Pods-HLExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57CC07A34908A27F4B9640A3D4AC4B /* Pods-HLExtension_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,6 @@
 		067AC6BC928DB7E81F2211D9C0FC9933 /* HLExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLExtension.xcconfig; sourceTree = "<group>"; };
 		08696F2DAA7C590406D80A95D9F4B12F /* Pods-HLExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		14B687BFACECA005B2216F3B0409C385 /* Pods-HLExtension_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLExtension_Example-resources.sh"; sourceTree = "<group>"; };
-		1710C39E9867E7610FE2EBC68B7828FC /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HLExtension/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		189438D96343FD02B89D77F5BF562D38 /* Pods-HLExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HLExtension_Example-dummy.m"; sourceTree = "<group>"; };
 		1FB29A84FA232EDF6B5681DC40E31C3F /* HLExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HLExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D78613F59A751C681C38EE1F0A19A6 /* Pods_HLExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +58,7 @@
 		AB5AAF412CF138066CD83902B9E10845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF09D543F9EA624B586D4C09C86516FD /* Pods-HLExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLExtension_Tests-resources.sh"; sourceTree = "<group>"; };
 		AF0A09D76D666A197D6097D7B2F30532 /* Pods-HLExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AF75DC5221822D9F00D99C77 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "HLExtension/Classes/Color+Extension.swift"; sourceTree = "<group>"; };
 		B250A2E7150062D203EE711F4041D50A /* Pods_HLExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51BF05894903D139608124DA615E561 /* Pods-HLExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLExtension_Example-umbrella.h"; sourceTree = "<group>"; };
 		BFD7CE82251BBDDE9342E3777F70F5C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 		1C10B8786998B1F4AC01DFA64764670E /* HLExtension */ = {
 			isa = PBXGroup;
 			children = (
-				1710C39E9867E7610FE2EBC68B7828FC /* ReplaceMe.swift */,
 				DE4381D1C032626699FDDBCDD6934A31 /* Pod */,
 				5A940E4692B5F9B06D4FB92B5835FA90 /* Support Files */,
+				AF75DC5221822D9F00D99C77 /* Color+Extension.swift */,
 			);
 			name = HLExtension;
 			path = ../..;
@@ -318,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					3CDB0CDCEBBF35BA02364077391C76BB = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -360,7 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5045F9D0FDA785685029DC3A56700B /* HLExtension-dummy.m in Sources */,
-				B6B94FB2E82E53D489DB54B861E0EA01 /* ReplaceMe.swift in Sources */,
+				AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 067AC6BC928DB7E81F2211D9C0FC9933 /* HLExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -643,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 067AC6BC928DB7E81F2211D9C0FC9933 /* HLExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

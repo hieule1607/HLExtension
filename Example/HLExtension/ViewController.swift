@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import HLExtension
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor(hexString: "#add8e6")
     }
 
     override func didReceiveMemoryWarning() {
