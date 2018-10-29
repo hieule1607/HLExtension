@@ -5,7 +5,7 @@
 //  Created by Hieu Lam on 10/29/18.
 //
 
-public class FlowLayout: UICollectionViewFlowLayout {
+public class LeftAlignFlowLayout: UICollectionViewFlowLayout {
     override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let attributes = super.layoutAttributesForElements(in: rect)
         
