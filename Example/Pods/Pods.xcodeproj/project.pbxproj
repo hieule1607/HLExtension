@@ -14,7 +14,8 @@
 		74925ACC52BDD0F33251318DE3829670 /* Pods-HLExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8331F96493A96DA3D82236D0847ADFC8 /* Pods-HLExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F393CA694F2520D814AEB727AFEAE22 /* Pods-HLExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 189438D96343FD02B89D77F5BF562D38 /* Pods-HLExtension_Example-dummy.m */; };
 		AC5045F9D0FDA785685029DC3A56700B /* HLExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3B5837DCB8D6DE6865E99BFDA47C /* HLExtension-dummy.m */; };
-		AF144E662187538300F2D1C7 /* HLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E652187538300F2D1C7 /* HLBaseViewController.swift */; };
+		AF144E6D21876B3700F2D1C7 /* HLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E6C21876B3700F2D1C7 /* HLBaseViewController.swift */; };
+		AF144E6F21876B5800F2D1C7 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */; };
 		AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75DC5221822D9F00D99C77 /* Color+Extension.swift */; };
 		AFFA33072182353C0013F649 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA33062182353C0013F649 /* Date+Extension.swift */; };
 		AFFA330B218239740013F649 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA330A218239740013F649 /* String+Extension.swift */; };
@@ -61,7 +62,8 @@
 		AB5AAF412CF138066CD83902B9E10845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF09D543F9EA624B586D4C09C86516FD /* Pods-HLExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLExtension_Tests-resources.sh"; sourceTree = "<group>"; };
 		AF0A09D76D666A197D6097D7B2F30532 /* Pods-HLExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AF144E652187538300F2D1C7 /* HLBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLBaseViewController.swift; sourceTree = "<group>"; };
+		AF144E6C21876B3700F2D1C7 /* HLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HLBaseViewController.swift; path = HLExtension/Classes/HLBaseViewController.swift; sourceTree = "<group>"; };
+		AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Double+Extension.swift"; path = "HLExtension/Classes/Double+Extension.swift"; sourceTree = "<group>"; };
 		AF75DC5221822D9F00D99C77 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "HLExtension/Classes/Color+Extension.swift"; sourceTree = "<group>"; };
 		AFFA33062182353C0013F649 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "HLExtension/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
 		AFFA330A218239740013F649 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "HLExtension/Classes/String+Extension.swift"; sourceTree = "<group>"; };
@@ -134,7 +136,8 @@
 				AF75DC5221822D9F00D99C77 /* Color+Extension.swift */,
 				AFFA33062182353C0013F649 /* Date+Extension.swift */,
 				AFFA330A218239740013F649 /* String+Extension.swift */,
-				AF144E652187538300F2D1C7 /* HLBaseViewController.swift */,
+				AF144E6C21876B3700F2D1C7 /* HLBaseViewController.swift */,
+				AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */,
 			);
 			name = HLExtension;
 			path = ../..;
@@ -375,9 +378,10 @@
 			files = (
 				AFFA330B218239740013F649 /* String+Extension.swift in Sources */,
 				AC5045F9D0FDA785685029DC3A56700B /* HLExtension-dummy.m in Sources */,
+				AF144E6F21876B5800F2D1C7 /* Double+Extension.swift in Sources */,
 				AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */,
 				AFFA33072182353C0013F649 /* Date+Extension.swift in Sources */,
-				AF144E662187538300F2D1C7 /* HLBaseViewController.swift in Sources */,
+				AF144E6D21876B3700F2D1C7 /* HLBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
