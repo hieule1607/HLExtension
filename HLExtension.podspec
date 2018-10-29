@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLExtension'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'Make some extension that is used different project.'
   s.description      = <<-DESC
 Yah. Make some extension that is used different project.
@@ -21,5 +21,5 @@ Yah. Make some extension that is used different project.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift'
 end
