@@ -54,7 +54,15 @@ open class HLBaseViewController: UIViewController {
                 }
             }
         }
-        
+    }
+    
+    open func setBackButton(buttonTitle : String){
+        let backButton = UIBarButtonItem(title: buttonTitle, style: .plain, target: self, action: #selector(backNavigation))
+        navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc func backNavigation() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*
