@@ -14,6 +14,7 @@
 		74925ACC52BDD0F33251318DE3829670 /* Pods-HLExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8331F96493A96DA3D82236D0847ADFC8 /* Pods-HLExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F393CA694F2520D814AEB727AFEAE22 /* Pods-HLExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 189438D96343FD02B89D77F5BF562D38 /* Pods-HLExtension_Example-dummy.m */; };
 		AC5045F9D0FDA785685029DC3A56700B /* HLExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF3B5837DCB8D6DE6865E99BFDA47C /* HLExtension-dummy.m */; };
+		AF07AFC32195F4B500FD802E /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07AFC22195F4B500FD802E /* Device+Extension.swift */; };
 		AF07F1C021929002006B5746 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1BF21929002006B5746 /* View+Extension.swift */; };
 		AF144E6D21876B3700F2D1C7 /* HLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E6C21876B3700F2D1C7 /* HLBaseViewController.swift */; };
 		AF144E6F21876B5800F2D1C7 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */; };
@@ -62,6 +63,7 @@
 		A15435DC7B36A437B289EA2AFA03766D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A465BE9B91EF7B688734222FA28EDF81 /* Pods-HLExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB5AAF412CF138066CD83902B9E10845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF07AFC22195F4B500FD802E /* Device+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Device+Extension.swift"; path = "HLExtension/Classes/Device+Extension.swift"; sourceTree = "<group>"; };
 		AF07F1BF21929002006B5746 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+Extension.swift"; path = "HLExtension/Classes/View+Extension.swift"; sourceTree = "<group>"; };
 		AF09D543F9EA624B586D4C09C86516FD /* Pods-HLExtension_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLExtension_Tests-resources.sh"; sourceTree = "<group>"; };
 		AF0A09D76D666A197D6097D7B2F30532 /* Pods-HLExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		1C10B8786998B1F4AC01DFA64764670E /* HLExtension */ = {
 			isa = PBXGroup;
 			children = (
+				AF07AFC22195F4B500FD802E /* Device+Extension.swift */,
 				DE4381D1C032626699FDDBCDD6934A31 /* Pod */,
 				5A940E4692B5F9B06D4FB92B5835FA90 /* Support Files */,
 				AF75DC5221822D9F00D99C77 /* Color+Extension.swift */,
@@ -389,6 +392,7 @@
 				AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */,
 				AFFA33072182353C0013F649 /* Date+Extension.swift in Sources */,
 				AF144E6D21876B3700F2D1C7 /* HLBaseViewController.swift in Sources */,
+				AF07AFC32195F4B500FD802E /* Device+Extension.swift in Sources */,
 				AF144E76218773C700F2D1C7 /* CollectionViewFlowlayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
