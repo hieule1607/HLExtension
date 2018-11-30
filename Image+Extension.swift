@@ -9,6 +9,7 @@
 import UIKit
 
 public extension UIImage {
+    // MARK: - Properties
     /// SwifterSwift: Size in bytes of UIImage
     public var bytesSize: Int {
         return UIImageJPEGRepresentation(self, 1)?.count ?? 0
@@ -28,7 +29,7 @@ public extension UIImage {
     public var template: UIImage {
         return withRenderingMode(.alwaysTemplate)
     }
-    
+    // MARK: - Methods
     /// SwifterSwift: Compressed UIImage from original UIImage.
     ///
     /// - Parameter quality: The quality of the resulting JPEG image, expressed as a value from 0.0 to 1.0. The value 0.0 represents the maximum compression (or lowest quality) while the value 1.0 represents the least compression (or best quality), (default is 0.5).
@@ -218,29 +219,7 @@ public extension UIImage {
         return image
     }
     
-    // SwifterSwift: Create UIImage from color and size.
-    ///
-    /// - Parameters:
-    ///   - color: image fill color.
-    ///   - size: image size.
-    public convenience init(color: UIColor, size: CGSize) {
-        UIGraphicsBeginImageContextWithOptions(size, false, 1)
-        
-        defer {
-            UIGraphicsEndImageContext()
-        }
-        
-        color.setFill()
-        UIRectFill(CGRect(origin: .zero, size: size))
-        
-        guard let aCgImage = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else {
-            self.init()
-            return
-        }
-        
-        self.init(cgImage: aCgImage)
-    }
-     public func makeImageCornerRadius(_ radius: CGFloat) -> UIImage {
+    public func makeImageCornerRadius(_ radius: CGFloat) -> UIImage {
         let rect = CGRect(origin: CGPoint(x: 0,y: 0), size: self.size)
         
         UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale)
@@ -269,6 +248,30 @@ public extension UIImage {
         let image = makeImageCornerRadius(radius)
         
         return image
+    }
+    
+    // MARK: - Initializers
+    // SwifterSwift: Create UIImage from color and size.
+    ///
+    /// - Parameters:
+    ///   - color: image fill color.
+    ///   - size: image size.
+    public convenience init(color: UIColor, size: CGSize) {
+        UIGraphicsBeginImageContextWithOptions(size, false, 1)
+        
+        defer {
+            UIGraphicsEndImageContext()
+        }
+        
+        color.setFill()
+        UIRectFill(CGRect(origin: .zero, size: size))
+        
+        guard let aCgImage = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else {
+            self.init()
+            return
+        }
+        
+        self.init(cgImage: aCgImage)
     }
 }
 #endif
