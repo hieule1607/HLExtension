@@ -6,7 +6,19 @@
 //
 
 public extension UIView {
-    public func addInnerShadow(to edges:[UIRectEdge], radius:CGFloat, toColor: UIColor, fromColor: UIColor){
+    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor, start: CGPoint = CGPoint(x: 0, y: 0), end: CGPoint = CGPoint(x: 1, y: 1)) {
+        // By default
+        // 0, 0 = top left 1,1 = bottom right
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.startPoint = start
+        gradientLayer.endPoint = end
+        
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
+    func addInnerShadow(to edges:[UIRectEdge], radius:CGFloat, toColor: UIColor, fromColor: UIColor){
         
         // Set up its frame.
         let viewFrame = self.frame
