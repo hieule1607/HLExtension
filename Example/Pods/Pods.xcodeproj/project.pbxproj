@@ -20,7 +20,7 @@
 		AF144E6F21876B5800F2D1C7 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */; };
 		AF144E76218773C700F2D1C7 /* CollectionViewFlowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF144E75218773C700F2D1C7 /* CollectionViewFlowlayout.swift */; };
 		AF15DCE121AE93D7007E01C5 /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF15DCE021AE93D7007E01C5 /* Label+Extension.swift */; };
-		AF40BEF721B1A633004A8645 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40BEF621B1A633004A8645 /* Image+Extension.swift */; };
+		AF40BEF921B1AB1C004A8645 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40BEF821B1AB1C004A8645 /* Image+Extension.swift */; };
 		AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75DC5221822D9F00D99C77 /* Color+Extension.swift */; };
 		AFDAA26321ACE702008471C9 /* NavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDAA26221ACE702008471C9 /* NavigationBar+Extension.swift */; };
 		AFDAA26821AD4780008471C9 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDAA26721AD4780008471C9 /* TextField+Extension.swift */; };
@@ -75,7 +75,7 @@
 		AF144E6E21876B5800F2D1C7 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Double+Extension.swift"; path = "HLExtension/Classes/Double+Extension.swift"; sourceTree = "<group>"; };
 		AF144E75218773C700F2D1C7 /* CollectionViewFlowlayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewFlowlayout.swift; path = HLExtension/Classes/CollectionViewFlowlayout.swift; sourceTree = "<group>"; };
 		AF15DCE021AE93D7007E01C5 /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Label+Extension.swift"; path = "HLExtension/Classes/Label+Extension.swift"; sourceTree = "<group>"; };
-		AF40BEF621B1A633004A8645 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		AF40BEF821B1AB1C004A8645 /* Image+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+Extension.swift"; path = "HLExtension/Classes/Image+Extension.swift"; sourceTree = "<group>"; };
 		AF75DC5221822D9F00D99C77 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "HLExtension/Classes/Color+Extension.swift"; sourceTree = "<group>"; };
 		AFDAA26221ACE702008471C9 /* NavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NavigationBar+Extension.swift"; path = "HLExtension/Classes/NavigationBar+Extension.swift"; sourceTree = "<group>"; };
 		AFDAA26721AD4780008471C9 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TextField+Extension.swift"; path = "HLExtension/Classes/TextField+Extension.swift"; sourceTree = "<group>"; };
@@ -145,6 +145,7 @@
 		1C10B8786998B1F4AC01DFA64764670E /* HLExtension */ = {
 			isa = PBXGroup;
 			children = (
+				AF40BEF821B1AB1C004A8645 /* Image+Extension.swift */,
 				AF07AFC22195F4B500FD802E /* Device+Extension.swift */,
 				DE4381D1C032626699FDDBCDD6934A31 /* Pod */,
 				5A940E4692B5F9B06D4FB92B5835FA90 /* Support Files */,
@@ -158,7 +159,6 @@
 				AFDAA26221ACE702008471C9 /* NavigationBar+Extension.swift */,
 				AFDAA26721AD4780008471C9 /* TextField+Extension.swift */,
 				AF15DCE021AE93D7007E01C5 /* Label+Extension.swift */,
-				AF40BEF621B1A633004A8645 /* Image+Extension.swift */,
 			);
 			name = HLExtension;
 			path = ../..;
@@ -404,7 +404,7 @@
 				AF15DCE121AE93D7007E01C5 /* Label+Extension.swift in Sources */,
 				AFDAA26821AD4780008471C9 /* TextField+Extension.swift in Sources */,
 				AF75DC5321822D9F00D99C77 /* Color+Extension.swift in Sources */,
-				AF40BEF721B1A633004A8645 /* Image+Extension.swift in Sources */,
+				AF40BEF921B1AB1C004A8645 /* Image+Extension.swift in Sources */,
 				AFFA33072182353C0013F649 /* Date+Extension.swift in Sources */,
 				AF144E6D21876B3700F2D1C7 /* HLBaseViewController.swift in Sources */,
 				AFDAA26321ACE702008471C9 /* NavigationBar+Extension.swift in Sources */,
