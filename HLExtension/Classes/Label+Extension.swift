@@ -17,4 +17,8 @@ public extension UILabel {
         
         self.attributedText = attribute
     }
+    
+    func setFontColor(str: String, font: UIFont?, color: UIColor?){
+        self.attributedText = NSAttributedString(string: str, attributes: [NSAttributedStringKey.foregroundColor : color ?? UIColor.black, NSAttributedStringKey.font: font ?? UIFont.systemFont(ofSize: 16)])
+    }
 }
